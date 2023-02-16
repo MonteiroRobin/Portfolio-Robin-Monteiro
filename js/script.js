@@ -1,5 +1,5 @@
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -10,31 +10,37 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0; 
+  document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-  // Détecter le clic sur le bouton
-  $("#myBtn").click(function() {
-    // Récupérer les éléments icône et texte
-    var icon = $("#myIcon");
-    var text = $("#myText");
-    
-    // Changer l'icône
-    icon.attr("class", "fa fa-check");
-    
-    // Changer le texte
-    text.text("Texte copié!");
-    
-    // Sélectionner le texte à copier
-    var textToCopy = "Le texte à copier";
-    var copyText = document.querySelector("#myText");
-    copyText.select();
-    
-    // Copier le texte
-    document.execCommand("copy");
-  });
 
-  $(document).ready(function(){
-    $("br").replaceWith("\n");
-  });
+$("#myBtn").click(function () {
+  
+  var icon = $("#myIcon");
+  var text = $("#myText");
+  icon.attr("class", "fa fa-check");
+  text.text("Texte copié!");
+
+  var textToCopy = "Le texte à copier";
+  var copyText = document.querySelector("#myText");
+  copyText.select();
+
+  document.execCommand("copy");
+});
+
+$(document).ready(function () {
+  $("br").replaceWith("\n");
+});
+
+
+
+
+
+
+const monElement = document.querySelector('.monElement');
+if (window.innerWidth <= 400) {
+  monElement.classList.add('hidden');
+} else {
+  monElement.classList.remove('hidden');
+}

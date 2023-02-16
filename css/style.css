@@ -516,19 +516,20 @@ footer p:nth-child(2) {
 
 }
 
-@media screen and (max-width: 375px) {
-   
-   body{
-    width: auto;
-   }
-   .logo h2
-   {
-    width: 100%;
-   }
-   .logo
-   {
-    width: 100%;
-   }
+@media screen and (max-width: 400px) {
+
+    body {
+        width: auto;
+    }
+
+    .logo h2 {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
     nav ul li a {
         font-size: 21px;
 
@@ -537,7 +538,7 @@ footer p:nth-child(2) {
     nav ul {
         flex-direction: column;
         flex-flow: wrap;
-     
+
     }
 
     nav {
@@ -571,24 +572,24 @@ footer p:nth-child(2) {
 
     }
 
-    .texte-parcours
-    {
+    .texte-parcours {
         width: 100%;
     }
-    .mon-parcours
-    {
+
+    .mon-parcours {
         display: flex;
         height: auto;
     }
-.principal
-{
-    height: auto;
-    flex-direction: column;
-    
-}
-    .mon-parcours img{
+
+    .principal {
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .mon-parcours img {
         height: 400px;
-    width: 100%;
+        width: 100%;
     }
 
     .texte-parcours h2 {
@@ -596,34 +597,33 @@ footer p:nth-child(2) {
         font-size: 30px;
         margin-bottom: 10px;
         display: flex;
-       text-align: center;
-      }
-      .sous-titre
-      {
+        text-align: center;
+    }
+
+    .sous-titre {
         font-size: 25px;
         text-align: center;
-      
-      }
 
-      .texte-parcours .description
-      {
+    }
+
+    .texte-parcours .description {
         font-size: 18px;
         text-align: justify;
         width: 100%;
-       
+
         letter-spacing: 0px;
-      }
+    }
 
 
-      .titre h2
-      {
+    .titre h2 {
         width: auto;
         font-size: 40px;
-      }
-      .box
-      {
+    }
+
+    .box {
         flex-direction: column;
-      }
+    }
+
     .carte {
         flex-direction: column;
         width: 80%;
@@ -648,13 +648,15 @@ footer p:nth-child(2) {
         height: 5%;
 
     }
-.mail p{
-    font-size: 27px;
-}
-.mail .boutton-deux
-{
-    font-size: 27px;
-}
+
+    .mail p {
+        font-size: 27px;
+    }
+
+    .mail .boutton-deux {
+        font-size: 27px;
+    }
+
     .carte .texte span {
         font-size: 18px;
     }

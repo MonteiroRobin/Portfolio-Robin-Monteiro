@@ -116,7 +116,6 @@ nav ul li a {
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.651));
     color: white;
     text-decoration: none;
-    font-weight: bold;
     padding: 12px 18px 0px 18px;
     flex-direction: row;
     border: 0.1px solid rgb(133, 132, 132);
@@ -134,6 +133,8 @@ nav ul li a:hover {
 body {
     height: auto;
     font-family: sans-serif;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .intro {
@@ -155,7 +156,7 @@ body {
 .intro a {
     color: white;
     cursor: pointer;
-    margin-left: 21%;
+    margin-left: 17%;
 
     font-size: 45px;
 }
@@ -324,9 +325,36 @@ body {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
+
+    body {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    #top-button {
+        display: none;
+    }
+
+    nav {
+        display: contents;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-direction: column;
+    }
+
     #top-button {
         right: 14%;
+    }
+
+    .intro h2 {
+        font-size: 39px;
+        margin-top: 30px;
     }
 
     .intro h1 {
@@ -334,10 +362,23 @@ body {
         width: auto;
     }
 
+    .intro a {
+        margin-left: 36%;
+    }
+
     .intro {
         margin-left: 20%;
         flex-direction: column;
 
+    }
+
+    .carte h2 {
+        width: 100%;
+    }
+
+    .description {
+        text-align: justify;
+        width: 100%;
     }
 
     img {
@@ -356,6 +397,15 @@ body {
         flex-wrap: wrap;
     }
 
+    .carte .texte {
+        width: 94%;
+        margin-left: 5px;
+    }
+
+    .carte .big {
+        width: 100%;
+    }
+
     .screen {
         object-fit: contain;
         justify-content: space-around;
@@ -372,18 +422,20 @@ body {
         margin: auto;
     }
 
-    .carte h2 {
-        width: 150%;
+    .objectif {
+        width: 100%;
+        margin-left: 0px;
     }
 
-    .objectif h1 {
+    .objectif h2 {
         margin-left: 0%;
+        width: 100%;
     }
 
     .objectif p {
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 21px;
+        line-height: 28px;
 
-        text-align: center;
+        text-align: left;
     }
 }
