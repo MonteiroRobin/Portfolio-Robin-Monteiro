@@ -44,3 +44,4 @@ if (window.innerWidth <= 400) {
 } else {
   monElement.classList.remove('hidden');
 }
+

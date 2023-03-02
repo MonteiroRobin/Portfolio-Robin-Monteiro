@@ -118,9 +118,23 @@
 
 
     <aside class=mail id="contact">
-        <p> Me contacter par mail :</p>
-        <a class="boutton-deux" id="copy-button">robin.mntro@gmail.com</a>
-
+        <p> Me contacter :</p>
+      
+        <form
+        action="https://formspree.io/f/xknabzoe"
+        method="POST"
+      >
+        <label>
+         Votre email:
+          <input type="email" name="email">
+        </label>
+        <label>
+        Votre message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">ENVOYER</button>
+      </form>
+          
     </aside>
 
 
